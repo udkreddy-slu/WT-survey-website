@@ -1,0 +1,52 @@
+.team {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .team-member-card {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-icon {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    overflow: auto;
+    h3 {
+      margin-bottom: 5px;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+
+  .team-member-card:hover {
+    background-color: #f0f0f0;
+  border-color: #aaa;
+  transform: scale(1.05);
+  }
+  
+  .team-member-card.active {
+    background-color: #eee;
+    border-color: #ddd;
+  }

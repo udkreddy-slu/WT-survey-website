@@ -1,0 +1,30 @@
+.tabs-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .tab {
+    flex: 1 0 calc(33.333% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+  }
+  
+  .tab:hover {
+    background-color: #f0f0f0;
+    border-color: #aaa;
+    transform: scale(1.05);
+  }
+  
+  .tab h3 {
+    margin-top: 0;
+  }
+  
+  .tab p {
+    margin-bottom: 0;
+  }
+  
