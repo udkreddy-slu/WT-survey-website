@@ -21,7 +21,7 @@ const Navbar = () => {
                     <NavLink to="/Surveys" activeStyle>
                         Surveys
                     </NavLink>
-                    <NavLink to="/annual" activeStyle>
+                    <NavLink to="/report" activeStyle>
                         Report
                     </NavLink>
                     <NavLink to="/team" activeStyle>

@@ -9,7 +9,7 @@ const teamMembers = [
     { name: 'Bala murali satyendra', githubUsername: 'https://github.com/balamurali0532', icon: 'https://avatars.githubusercontent.com/u/1?v=4' },
     { name: 'Yenkatarajalaxmimanohar', githubUsername: 'https://github.com/yrlmanoharreddy', icon: 'https://avatars.githubusercontent.com/u/2?v=4' },
     { name: 'Harish Jamallamudi', githubUsername: 'https://github.com/harish426', icon: 'https://avatars.githubusercontent.com/u/3?v=4' },
-    { name: 'Abhishek Gurudwar', githubUsername: 'https://github.com/alice', icon: 'https://avatars.githubusercontent.com/u/4?v=4' },
+    { name: 'Abhishek Gurudwar', githubUsername: 'https://github.com/agunit-73', icon: 'https://avatars.githubusercontent.com/u/4?v=4' },
     { name: 'Rahul Kandra', githubUsername: 'https://github.com/rahulkandra', icon: 'https://avatars.githubusercontent.com/u/5?v=4' },
     { name: 'Dushyanth Kumar Reddy', githubUsername: 'https://github.com/udkreddy', icon: 'https://avatars.githubusercontent.com/u/6?v=4' },
   ];
