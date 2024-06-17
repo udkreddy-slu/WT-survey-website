@@ -18,7 +18,10 @@ const Surveys = () => {
           onMouseLeave={() => setActiveTab(null)}
         >
           <h3>{tab.title}</h3>
-          <p>{tab.description}</p>
+          {/* <p>{tab.description}</p> */}
+          <a href={tab.description} target="_blank" rel="noopener noreferrer">
+            {tab.description}
+          </a>
         </div>
       ))}
     </div>
