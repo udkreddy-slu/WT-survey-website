@@ -216,17 +216,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Security: Ensuring robust security mechanisms to protect against a variety of threats, including unauthorized access, data breaches, and attacks on availability. MEC systems are more exposed to physical attacks due to their deployment at the edge of the network.:Dependability: Achieving high reliability and availability of MEC services is crucial, especially for mission-critical applications like industrial automation and vehicular communications. Fault management, service continuity, and resource allocation are key aspects.:Performance: MEC aims to reduce latency and improve the efficiency of data processing by bringing computation closer to the end-users. However, this requires efficient resource management, network performance optimization, and handling the variability in service demands.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Access Control and Authentication: Implementing robust authentication mechanisms to ensure only authorized entities can access MEC resources.:Data Encryption: Using encryption techniques to protect data in transit and at rest.:Intrusion Detection Systems (IDS): Deploying IDS to monitor network traffic and detect malicious activities.:Virtualization Security: Ensuring the security of virtual machines (VMs) and containers used in MEC environments.:Redundant Deployments: Deploying multiple MEC hosts to provide failover capabilities and enhance system reliability.:Fault Management: Implementing fault detection and recovery mechanisms to handle failures in MEC components.:Service Continuity: Ensuring seamless service continuity during user mobility and MEC host failures.:Dynamic Resource Allocation: Using dynamic resource allocation strategies to optimize the utilization of MEC resources and meet varying service demands.:Network Slicing: Implementing network slicing to allocate dedicated resources for different types of services, ensuring performance isolation.:Latency Optimization: Minimizing latency through optimized routing, caching strategies, and edge analytics.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "State-of-the-Art Review: Conducting a comprehensive review of existing literature and standardization efforts related to MEC security, dependability, and performance. This includes analyzing the ETSI MEC architecture and related technologies such as Network Function Virtualization (NFV) and Software-Defined Networking (SDN).:Taxonomy and Classification: Developing a taxonomy for each aspect (security, dependability, and performance) to categorize existing solutions and identify gaps. This involves defining key attributes, issues, and countermeasures for each aspect.:Challenges and Future Directions: Identifying the main challenges in jointly addressing security, dependability, and performance in 5G MEC systems. The paper discusses trade-offs and potential solutions for integrating these aspects in future MEC deployments, considering the advancements in 6G technologies.",
         },
       ],
     },
@@ -239,17 +242,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Scalability and Heterogeneity: The MEC environment must handle a variety of technologies (3G, 4G, 5G, Wi-Fi, Wi-Max) on edge devices, necessitating scalable and heterogeneous platform support.:Latency and Bandwidth Optimization: Achieving low latency and optimal bandwidth utilization is critical for MEC to support real-time and ultra-low latency communication (URLLC) applications.:Security and Accessibility: Ensuring secure and consistent service delivery while managing resource availability, physical security, and protecting data from intruders.:Standardization and Collaboration: MEC is still in early implementation stages, requiring standardization and collaborative efforts between industry and researchers to ensure efficient deployment.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "MEC PoC at Mitratel BTS Room: Conducting a proof of concept (PoC) to demonstrate the feasibility and reliability of deploying MEC on the tower ecosystem. This PoC involves Mitratel providing the infrastructure, Telkomsel offering edge servers and mobile virtual networks, and Telkom delivering OTT applications.:Micro Edge Data Centers: Utilizing Mitratel's BTS rooms as micro edge data centers to provide edge infrastructure solutions. These centers offer conditioned rooms, power, connectivity, Network Monitoring Systems (NMS), and other supporting infrastructure.:Dynamic Resource Allocation: Implementing dynamic resource allocation strategies to handle the varying demands and ensure efficient utilization of MEC resources.:Smart Site Maintenance: Developing a smart site maintenance program using IoT devices and AI to monitor tower conditions and reduce the frequency of physical maintenance visits, thus optimizing operational efficiency and cost.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "System Architecture: Designing a MEC infrastructure that integrates edge computing capabilities within the existing tower ecosystem. This involves setting up micro edge data centers, edge servers, and leveraging existing tower infrastructure.:Proof of Concept (PoC): Implementing a PoC at the Mitratel BTS Room in Gelora Bung Karno, Jakarta. This PoC demonstrates the practical application of MEC, showcasing use cases such as trash detection, mask detection, and virtual reality.:Comparison with American Tower: Comparing Mitratel's micro edge data centers with American Tower's facilities to identify differences and areas for improvement. This comparison covers facility features, power availability, cooling capacity, security measures, and network services.:Collaboration and Testing: Collaborating with Telkom and Telkomsel to implement end-to-end MEC solutions, including infrastructure, monitoring systems, and use case applications. Testing the system for performance metrics such as URLLC rates, which were 5 ms with MEC compared to 15 ms without MEC.",
         },
       ],
     },
@@ -262,17 +268,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "High Latency and Bandwidth Requirements: AR and VR applications require extremely low latency (less than 20 milliseconds) and high bandwidth to provide a seamless user experience and prevent motion sickness.:Compute-Intensive Tasks: These applications involve compute-intensive tasks such as camera calibration, mapping, tracking, and 3D rendering, which are challenging to process on mobile devices due to their limited resources.:Mobility Management: Ensuring a consistent Quality of Experience (QoE) as users move, join, or leave the network requires effective management of mobility and dynamic resource allocation.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Online Mobility-aware Heuristic: An online heuristic to reduce the Game Frame Time (GFT), which is the total response time experienced by players. This heuristic jointly considers task offloading, service placement, and migration of tasks and services.:Region-based Network Partitioning: Dividing the MEC network into regions, each with a Region Coordinator (RC) responsible for processing action data. This decentralizes the network and reduces the load on individual MEC hosts.:Dynamic Task and Service Migration: Continuously reallocating tasks and migrating services based on player mobility and network conditions to maintain low GFT and high QoE.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "System Architecture Design: Designing a MEC network divided into multiple regions, each with multiple MEC hosts and a Region Coordinator. Players are connected to the nearest MEC host, which processes their action data and communicates with the RC.: Problem Formulation: Formulating the joint service placement and task offloading problem to minimize GFT. This involves defining the cost of partitioning the network, the computation and communication costs, and the migration costs of tasks and services.: Heuristic Algorithm Development: Developing an online heuristic algorithm that Partitions the network into regions.:Assigns MEC hosts to players based on the highest data rate and resource availability.:Dynamically updates offloading decisions and reassigns players to different MEC hosts to minimize GFT.:Performance Evaluation: Conducting experiments to evaluate the algorithm's performance under different scenarios, including varying player mobility, the number of players, and the number of regions. The experiments measure GFT and its variance to assess the effectiveness of the proposed solutions.:Key Findings:Consistent User Experience: The proposed heuristic maintains a consistent GFT, with a standard deviation of 0 ms in the best case and 9.26 ms in the worst case, even with up to 50% player mobility.:Impact of Mobility: Mobility increases GFT by 28.29% in the best case and 37.18% in the worst case compared to a no-mobility scenario.:Scalability: Increasing the number of regions reduces GFT by distributing the workload more evenly across multiple RCs, demonstrating the scalability of the proposed network architecture.",
         },
       ],
     },
@@ -285,17 +294,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "High Reliability and Low Latency: Ensuring ultra-reliable and low-latency communications is critical for applications like industrial automation, intelligent transportation, telemedicine, tactile internet, and virtual/augmented reality (VR/AR). The standard requirements for URLLCs include an end-to-end (E2E) latency of no more than 1 ms and a packet error probability between 10^-5 and 10^-7.:Integration with UAVs: UAVs (Unmanned Aerial Vehicles) are proposed to enhance network coverage and improve communication reliability and latency. However, integrating UAVs into existing network infrastructure poses challenges such as dynamic network topology, limited UAV battery life, and the need for seamless handover and mobility management.:Scalability and Energy Efficiency: With the expected increase in the number of connected devices in 6G networks, achieving scalability and energy efficiency while maintaining URLLC requirements is a significant challenge.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Physical Layer Enhancements:Finite Block Length (FBL) Concept: Using short packets with appropriate coding schemes to reduce over-the-air latency.:Advanced Modulation and Coding: Implementing modulation schemes like quadrature amplitude modulation (QAM) and forward error correction to increase reliability.:Channel State Information (CSI): Using accurate CSI for optimizing transmission power and ensuring reliable communication.:Network Layer Innovations:Multi-Connectivity: Employing multi-connectivity techniques to ensure network availability and reliability by connecting devices to multiple base stations or UAVs.:Dynamic Resource Allocation: Implementing dynamic resource allocation strategies to manage network resources efficiently and meet the varying demands of URLLC applications.:Network Slicing: Utilizing network slicing to provide dedicated resources for URLLC services, ensuring isolation and guaranteed performance.:Integration of UAVs:UAV Placement and Path Planning: Optimizing the placement and trajectory of UAVs to maintain line-of-sight (LoS) communication links and improve channel conditions.:Energy-Efficient Operations: Developing energy-efficient deployment and operation strategies for UAVs to prolong their battery life and ensure continuous service.:Cooperative UAV Networks: Using multiple UAVs in a cooperative manner to enhance coverage, reliability, and service continuity.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "Analytical Modeling: Developing mathematical models to characterize and optimize the performance of UAV-enabled URLLC networks. This includes deriving expressions for key performance indicators (KPIs) such as packet error probability, data rate, and latency.:Simulation and Evaluation: Conducting extensive simulations to evaluate the proposed solutions under various network scenarios and conditions. The simulations consider factors such as UAV mobility, network load, and interference.:Case Studies: Presenting case studies and practical implementations of UAV-enabled URLLC networks to demonstrate the feasibility and effectiveness of the proposed solutions. These case studies highlight real-world applications and performance improvements.",
         },
       ],
     },
@@ -308,17 +320,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Resource Constraints: URLLC services require strict constraints on data rate, latency, and availability, which are challenging to meet with limited network resources, such as energy, delay, and channel availability.:Energy Consumption: Increasing transmission power to meet delay deadlines can rapidly drain the battery of end-user devices with limited resources.:Trade-off Management: Balancing energy consumption and delay to optimize both while maintaining the required bit error rate (BER) is a complex problem.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "CPOMDP Formulation: The optimization problem is formulated as a constrained partially observable Markov decision process (CPOMDP) to minimize energy consumption while meeting delay and BER constraints.:Transformation to CMDP: Due to the computational complexity of CPOMDP, the problem is transformed into a belief constraint Markov decision process (CMDP) and solved using mixed-integer linear programming (MILP).:Heuristic Immediate Rewards and Costs: Using heuristic values for rewards and costs to simplify the optimization process while maintaining performance.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "System Model for EDMF:Radio and Frame Models: Utilizing various modulation schemes (e.g., BPSK, QAM) and hybrid automatic repeat request (HARQ) models to represent the 5G network environment.:Wireless Channel Model: Representing the Rayleigh fading channel as a finite state Markov chain (FSMC) to account for the variability in channel conditions.:Energy Dynamics Models: Assuming energy-harvesting capabilities for end-user devices, with a model that considers both energy consumption and harvesting.:CPOMDP Formulation:Defining the state space transition probabilities, observation probabilities, and immediate rewards.:Formulating the optimization problem to find the optimal policy that minimizes energy consumption while satisfying BER and delay constraints.:Solving EDMF with MILP:Using dynamic programming and MILP to estimate long-term rewards and costs.:Applying a pruning method to select optimal actions that meet the constraints on BER and delay.:Iteratively updating beliefs and evaluating policies until convergence.",
         },
       ],
     },
@@ -331,17 +346,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Resource Allocation Trade-offs: Serving URLLC traffic requires stringent latency (1 ms) and reliability (99.999%) constraints.Achieving these requirements can significantly degrade the enhanced Mobile Broadband (eMBB) downlink system capacity.:Control Channel Overhead: The need for frequent control channel resources and short transmission time intervals (TTIs) increases the control overhead, impacting the spectral efficiency and overall system performance.:Impact on eMBB Traffic: Introducing URLLC traffic into the network affects the performance of eMBB traffic, leading to a reduction in throughput and increased latency for non-URLLC services.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Resource Allocation and Link Adaptation Strategy: Implementing a suitable resource allocation strategy that balances the needs of URLLC and eMBB traffic. This involves using short TTIs and frequent control channel resources to meet URLLC requirements.:Advanced System-Level Simulations: Using system-level simulations to evaluate the impact of URLLC traffic on eMBB capacity. These simulations consider time-varying traffic, interference, link adaptation imperfections, and control and reference signal overhead.:Evaluation Methodology: Developing a methodology for assessing the cost of URLLC in terms of eMBB throughput degradation. This methodology includes key performance indicators (KPIs) that account for the control channel overhead and the effects of URLLC resource allocation strategies.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "Network and Traffic Model: Setting up a traditional urban macro cellular network with multiple cells and users. The network model includes stationary eMBB and URLLC users with specific traffic models.:Evaluation Methodology and KPIs: Running simulations for different offered loads of URLLC traffic and determining the average carried eMBB throughput per cell. The cost is measured as the relative reduction of eMBB throughput with respect to the URLLC offered load.:Physical Layer and Resource Allocation Considerations: Configuring the PHY and medium access control (MAC) layers to support URLLC requirements. This includes using mini-slots for scheduling both URLLC and eMBB traffic and frequent PDCCH resources for downlink data assignments.",
         },
       ],
     },
@@ -404,17 +422,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Increased Attack Surfaces: The integration of resource-constrained IoT devices with 5G expands the attack surface, making the network more susceptible to various types of attacks.:Vulnerabilities in 5G Networks: Despite the advancements in 5G technology, there are inherent vulnerabilities that have been inherited from previous generations (3G and 4G) and new vulnerabilities specific to 5G. These include location-tracking, network downgrading, and threats from untested new features.:Edge Network Security: As edge computing becomes more prevalent, securing the edge networks, which support IoT devices, becomes crucial. Edge networks are exposed to new security challenges, such as Distributed Denial of Service (DDoS) attacks and Man-in-the-Middle (MitM) attacks.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Enhanced Security Standards: Incorporating robust security standards for 5G networks to address the vulnerabilities identified. This includes improving signaling security, enterprise-security services, and specific security measures for MEC and IoT services.:Hybrid Security Deployments: Using personalized and hybrid security deployments recommended by network security firms to protect against massive security attacks like DDoS and MitM.:Edge Computing Security Measures: Implementing comprehensive security measures at the edge of the network, such as secure authentication mechanisms, encrypted communications, and intrusion detection systems (IDS) to protect IoT devices and data.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "Literature Review: Conducting an extensive review of existing literature to identify the security challenges and vulnerabilities in 5G networks, especially those related to IoT integration.:Threat Analysis: Analyzing the types of attacks that can target 5G networks, including those inherited from previous generations and new types of attacks specific to 5G. This analysis includes looking at attack vectors like location-tracking, network downgrading, and web-fingerprinting.:Case Studies and Examples: Presenting case studies and examples of security incidents and vulnerabilities in 5G networks. This includes discussing specific vulnerabilities identified using tools like 5GReasoner, which uncovered flaws in the 5G protocol suite.:Proposing Security Enhancements: Based on the findings from the literature review and threat analysis, proposing enhancements to existing security standards and practices. This includes recommendations for securing edge computing environments and improving overall network security.",
         },
       ],
     },
@@ -452,17 +473,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Energy Consumption: Mobile devices, particularly in areas with limited access to power, require applications to be as energy-efficient as possible to conserve battery life. Watching videos is a power-hungry activity that significantly affects battery life.:Impact of Programming Languages: Different programming languages can impact the energy consumption of mobile applications. Developers need to understand which languages are more energy-efficient to make informed choices.:Device and Environmental Variability: Factors such as device model, Android version, and API usage also influence battery consumption, adding complexity to developing energy-efficient applications.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Comparative Analysis of Programming Languages: Analyzing the energy consumption of video applications implemented in three different programming languages—Java, Kotlin, and React Native—to determine which language is more energy-efficient.:Experimental Evaluation: Conducting experiments on various devices, including older models like the LG Nexus 5X and Samsung Galaxy S5, to ensure the findings are relevant to a wide range of users, including those in rural areas.:Energy Measurement Techniques: Using tools and APIs, such as BatteryManager in Java, to measure energy consumption accurately and compare the results across different programming languages.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "Experiment Design:Video Application Implementation: Developing video applications using Java, Kotlin, and React Native. The applications include common video operations such as playing, fast-forwarding, and skipping clips.:Device and Environment Selection: Selecting a range of devices (e.g., LG Nexus 5X, Samsung Galaxy S5, RCA Tablet) and Android versions to conduct experiments. Ensuring that videos are stored locally and devices are set to airplane mode to isolate the impact of network conditions.:Energy Measurement:Battery Usage Monitoring: Measuring energy consumption using voltage and charge calculations derived from the BatteryManager API. Conducting ten consecutive runs of the same video to obtain consistent results.:Video Properties Experimentation: Evaluating the impact of changing video properties (e.g., resolution, bitrate, frame rate) on battery usage to understand how these factors influence energy efficiency.:Data Analysis:Energy Consumption Comparison: Comparing the energy consumption of applications implemented in different languages. Analyzing the results to identify which language offers better energy efficiency for video operations.:Battery Usage Percentage: Using the expo-battery API in React Native to measure battery usage percentage and compare it with Java and Kotlin implementations.",
         },
       ],
     },
@@ -501,17 +525,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Data Security and Privacy: Web 3.0 aims to provide a decentralized and secure internet, ensuring users have complete control over their personal data while offering a secure environment for transactions and data storage.:Scalability and Interoperability: Current blockchain networks face challenges related to limited transaction throughput and varying technical standards, making it difficult to connect and exchange data seamlessly across different platforms.:Regulatory Uncertainty: The evolving regulatory landscape for blockchain technology poses challenges for organizations in complying with legal requirements and adopting the technology.:Energy Consumption: The significant energy consumption associated with blockchain mining processes raises environmental concerns and affects the feasibility of large-scale adoption.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Combining Blockchain and AI:Enhanced Security: Blockchain provides a decentralized and tamper-proof ledger for storing and sharing data, while AI offers real-time threat detection and prediction capabilities. This combination enhances the overall security of the Web 3.0 environment.:Data Privacy: Blockchain can store sensitive data in an encrypted and tamper-proof manner, while AI can analyze this data while preserving user privacy.:Improved Efficiency: AI's automation capabilities combined with blockchain's decentralized nature create more efficient systems, reducing the need for intermediaries and lowering transaction costs.:Transparency and Accountability: The transparent and immutable nature of blockchain can track and verify AI system actions, increasing accountability and reducing the risk of bias or manipulation.:Proposed Architectural Framework:Application Layer: Manages user interactions, data storage, and communication with the underlying decentralized infrastructure. It includes blockchain-based decentralized applications (dApps).:Contract Layer: Executes smart contracts, which are self-executing agreements that enforce the policies of a decentralized application.:Network Layer: Provides the infrastructure for decentralized communication and data transfer between nodes in a Web 3.0 network.:Consensus Layer: Verifies transactions and updates the shared ledger, ensuring agreement on the system's state across the network.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "Literature Review: Conducting an extensive review of existing literature on blockchain, AI, and Web 3.0 to identify security challenges and potential solutions.:Threat Analysis: Analyzing various types of attacks and vulnerabilities associated with Web 3.0, including those inherited from previous web generations and new threats specific to decentralized applications and smart contracts.:Case Studies and Examples: Presenting case studies and practical examples of blockchain and AI integration in different domains, such as healthcare, finance, supply chain management, and cybersecurity.:Proposed Architecture: Developing a layered architecture for Web 3.0 that integrates blockchain and AI to address security, privacy, and scalability challenges. The architecture is designed to support the creation of decentralized applications that enable secure transactions, data management, and user interactions.",
         },
       ],
     },
@@ -524,17 +551,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Scalability of Manual Contact Tracing: Manual contact tracing is labor-intensive and does not scale well with exponential growth in infections. It struggles to identify contacts in crowded places or random encounters with strangers.:Privacy Concerns: Many DCT solutions raise privacy issues by tracking user locations and personal data, leading to concerns about data misuse and surveillance.:Effectiveness of DCT Solutions: The effectiveness of DCT applications varies, and the lack of real-world testing under emergency conditions adds uncertainty to their reliability and impact.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Bluetooth-Based Privacy-Preserving DCT: Utilizing Bluetooth technology for proximity sensing to trigger exposure notifications without compromising user privacy. This method relies on short-range communication between devices to detect proximity.:Decentralized Architecture: Implementing a decentralized architecture where the sensed data never leaves the device. This approach, popularized by the Google/Apple Exposure Notification (GAEN) framework, ensures that exposure risk calculations are performed locally, enhancing privacy.:Comprehensive DCT Frameworks: Developing and deploying robust DCT frameworks like the Corona-Warn-App (CWA) in Germany and CovTracer-Exposure Notification (CovTracer-EN) in Cyprus. These frameworks follow decentralized protocols and integrate with national public health systems.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "Background and Introduction to DCT:Overview of manual contact tracing and its limitations.:Introduction to digital contact tracing (DCT) technologies and their evolution across different generations (cellular, GPS, Bluetooth).:System Architecture and Protocols:Detailed explanation of centralized and decentralized proximity tracing protocols.:Focus on Bluetooth-based protocols, including centralized (PEPP-PT, BlueTrace, ROBERT, NHS protocol) and decentralized (DP-3T, TCN, PACT, GAEN) approaches.:Implementation and Case Studies:Case studies of the German Corona-Warn-App (CWA) and the Cypriot CovTracer-EN app, highlighting their architectures, integrations with public health systems, and deployment challenges.:Discussion of the Google/Apple Exposure Notification (GAEN) framework, including its features, configuration, and risk score calculations.:Effectiveness and Evaluation:Analysis of the global uptake of contact tracing apps and their effectiveness based on model-based studies, controlled experiments, and real-life implementations.:Evaluation of effectiveness indicators and lessons learned from the deployment of the CWA.:Security and Privacy Aspects:Examination of cybersecurity issues and reported incidents related to DCT applications.:Addressing data privacy concerns and discussing measures to enhance trust and adoption among users.",
         },
       ],
     },
@@ -547,17 +577,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Blockchain Bloat: Storing large EHRs on the blockchain leads to blockchain bloat, which slows down transaction speed and increases storage costs.:Security and Privacy Leakage: Sharing patients' sensitive data transparently across a distributed network poses risks of security breaches and privacy leaks.:Scalability Issues: The massive and growing volume of EHRs collected from various sources, such as IoT devices and mobile applications, makes it challenging to manage these records efficiently on the blockchain.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Off-Chain Data Storage: Storing large EHRs in the decentralized file system (DFS), specifically the InterPlanetary File System (IPFS), to avoid blockchain bloat. The system encrypts EHRs with multi-authority Ciphertext-Policy Attribute-Based Encryption (MA-CP-ABE) and stores the content identifier (CID) of the encrypted data on a permissioned blockchain.:Pseudonymization for Privacy: Using a hash-based pseudonymized tokenization technique to transform and mask patients' unique identifiers into irreversible tokens, ensuring that data cannot be linked back to the patients, thereby preserving privacy.:Fine-Grained Access Control: Implementing efficient access control mechanisms to ensure that only authorized users can access the encrypted EHRs, with flexible revocation capabilities to prevent data breaches.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "System Model Design:Data Layer: Collecting EHRs from various sources such as mobile applications and wearable devices.:User Layer: Facilitating communication among patients (data owners), healthcare providers (data users), and attribute managers in a permissioned blockchain network.:Decentralized Storage Layer: Storing encrypted EHRs in IPFS and managing data access through CIDs stored on the blockchain.:Security and Privacy Mechanisms:Separation of Identifiers: Separating direct identifiers (dID) and indirect identifiers (iID) from EHRs to protect patient privacy. Direct identifiers are pseudonymized, and indirect identifiers are encrypted using MA-CP-ABE.:Data Protection Phase: Encrypting indirect identifiers with predefined access policies and storing the encrypted EHRs in IPFS.:Access Control and Verification: Verifying access permissions and managing access rights through chaincode on the blockchain, ensuring that only authorized users can access the data.Performance Evaluation:Computational Complexity: Evaluating the computational time for cryptographic operations, such as setup, key generation, encryption, and decryption, and demonstrating that the system is scalable and efficient.:Storage Costs: Comparing the storage costs of PrivOff with existing on-chain storage solutions, showing that PrivOff significantly reduces storage overhead by offloading large EHRs to IPFS.:Data Availability: Demonstrating high data availability by retrieving EHRs from multiple IPFS peers, ensuring efficient and decentralized data access.",
         },
       ],
     },
@@ -570,17 +603,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Data Leaks to Third Parties: Web services frequently used by vulnerable groups often rely on third-party analytics services to improve their functionality and usability. However, these services inadvertently send a significant amount of sensitive personal data to third parties, raising privacy concerns.:Vulnerable Groups' Privacy Risks: Vulnerable groups, such as the elderly, people with medical issues, or those living in remote locations, are often compelled to use online services, making them particularly susceptible to privacy breaches. These groups might lack the digital literacy to understand the implications of data sharing and the skills to protect their privacy.:Inadequate Privacy Measures: Despite the sensitivity of the data, many web services do not implement adequate privacy measures to protect user data from being leaked to third-party analytics services.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Privacy-by-Design Approach: Encouraging web developers to adopt a privacy-by-design approach, where privacy is integrated into the system design from the outset. This includes minimizing data collection, anonymizing data, and ensuring that sensitive information is adequately protected.:Increased Transparency and User Control: Providing clear and transparent information to users about what data is being collected and shared. Users should have control over their data, including the ability to opt-out of data sharing with third parties.:Enhanced Security Measures: Implementing robust security measures to protect data from unauthorized access and leaks. This includes using encryption, secure data storage, and regular security audits to identify and mitigate vulnerabilities.:Regulatory Compliance: Ensuring that web services comply with data protection regulations such as the General Data Protection Regulation (GDPR). This involves obtaining explicit consent from users before collecting and sharing their data and implementing measures to protect special categories of personal data.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "Study Setting and Data Collection:The study examined 15 Finnish web services targeted at or often used by vulnerable groups, including services offered by the government, cities, organizations, and private companies.The services included immigration services, tax administration, public transport websites, mental health services, sexual minority web portals, private medical centers, and online pharmacies.:Network Traffic Analysis:Utilizing Google Chrome’s Developer Tools, the researchers recorded and analyzed the network traffic while using the main functionalities of these web services. The analysis focused on requests going to third parties and the type of personal data transmitted.The researchers identified personal data based on the GDPR definition, including IP addresses, location data, and device identifiers, as well as data that could be combined to identify a person.:Results and Findings:The analysis revealed that 14 out of the 15 web services leaked personal data to third-party analytics services. The data shared included IP addresses, device and user identifiers, User-Agent headers, and other technical data like screen resolution.:Public sector websites, while using fewer third-party services, still caused privacy issues by sharing information about visited pages and user actions.:Private medical centers and online pharmacies had significant privacy issues, leaking sensitive health-related data such as appointment details and prescription medicine orders to third-party services.:Discussion and Recommendations:The study discusses the implications of these data leaks, emphasizing the need for improved privacy measures, especially for web services handling sensitive data of vulnerable groups.:Recommendations include adopting a privacy-by-design approach, enhancing transparency, and ensuring regulatory compliance.",
         },
       ],
     },
@@ -593,17 +629,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Privacy Preservation: Ensuring that sensitive information within big datasets is protected during the exchange process. Both the data owner and the data customer require that privacy constraints are maintained, preventing unauthorized access to sensitive data.:Big Data Exchange Complexity: The process of exchanging big datasets involves significant complexity, including the need for federated environments and data federation architectures that can handle large volumes of data securely and efficiently.:Application Scenarios: Various application scenarios, such as social networks, bioinformatics tools, and smart city systems, require robust privacy-preserving mechanisms due to the sensitivity and volume of data being exchanged.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Decentralized Solutions:Blockchain Technology: Using blockchain to record transaction logs and important documents, providing a decentralized solution for big data exchange without the need for third parties. Blockchain ensures data integrity and auditability.:Smart Contracts: Implementing smart contracts and oblivious transfer protocols to achieve fair, autonomous, and privacy-preserving data exchanges. These mechanisms help ensure transaction fairness and privacy preservation without involving third-party intermediaries.:Privacy-Preserving Algorithms and Techniques:Attribute-Based Encryption (ABE): Using advanced encryption techniques like multi-authority Ciphertext-Policy Attribute-Based Encryption (MA-CP-ABE) to encrypt sensitive data and control access based on predefined policies.:Pseudonymization: Transforming and masking personal identifiers to prevent data from being linked back to individuals, enhancing privacy protection during data exchange.:Advanced System Architectures:Federated Environments: Utilizing federated environments where big data exchange methods are preferred over traditional data integration procedures. This involves decentralized data storage and management to ensure privacy and security.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "Literature Review: Conducting an extensive review of existing literature on privacy-preserving big data exchange, identifying key models, issues, and current research efforts.:Case Studies and Application Scenarios:Healthcare Systems: Analyzing the use of privacy-preserving big data exchange in healthcare systems, particularly during the COVID-19 pandemic. This includes examining how hospitals exchange clinical data while ensuring patient privacy.:Open Data Markets: Exploring the concept of open data markets for IoT data exchange, highlighting the privacy challenges and strategies for end-to-end privacy in these markets.:Future Research Directions:Private Attributes: Investigating the impact of making semantically relevant attributes private and the challenges this poses for data customers in understanding the data's context.:Data Redundancy: Balancing data redundancy and privacy to ensure data integrity while protecting sensitive information.:Interpretable Models: Developing interpretable models for privacy-preserving big data exchange to enhance understanding and transparency in the exchange process.: Scalability: Addressing scalability issues to ensure that privacy-preserving mechanisms can handle large-scale data exchanges efficiently.",
         },
       ],
     },
@@ -616,17 +655,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Increased Complexity: The 5G network introduces more complex service functions and HTTP/2-based service interfaces, changing the traditional signaling message communication architecture between network elements.:Dynamic Resource Allocation: With the introduction of multiple new suppliers and nodes, there is a need for a dynamic and efficient load balancing mechanism to manage the varying loads and ensure service continuity.:Integration of Old and New Network Elements: The long-term coexistence of 5G networks with 2/3/4G networks requires load balancing strategies that can handle new and old network elements simultaneously.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Load Balancing in LB Mode:Interface Load Balancing (LB): Using a single external interface or IP address to reduce the impact of multiple IP addresses on the service request NF and routing system.:Service Load Balancing (SLB): Hiding multiple NF providers or service processing modules from the service requester and supporting load balancing between them.:Global Load Balancing (GSLB): Achieving NF-level load balancing when LB is external to the NF provider cluster.:Load Balancing in NRF Mode:Network Repository Function (NRF): Registering NFs with NRF, providing status information, and synchronizing dynamic load information. The NRF mode allows service consumers to adjust routing strategies based on real-time load information.:Signaling Hub Node (SCP): Simplifying signaling routing configuration and maintaining flexible control of signaling routing in large-scale 4/5G networks.:Expansion Mode for Load Balancing Function:Binding Support Function (BSF): Acting as an intermediary, BSF supports the load balancing of NF providers by registering, updating, and deleting binding information, and allowing NF consumers to retrieve binding information based on specific criteria.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "System Model Design:Network Element Classification: Dividing network elements into Provider-NF, Consumer-NF, Adj-NF, and Route-NF based on their roles in the NF interaction process.Load Balancing Scenarios: Considering three scenarios for load balancing: new and old Provider-NF in 2/3/4G networks, new and old Provider-NF in 5G networks, and old Provider-NF in 2/3/4G networks coexisting with new Provider-NF in 5G networks.:Comparison and Analysis of Load Balancing Solutions:Professional Division and Cooperation: Ensuring that load balancing functions are completed by independent NFs or components.Minimizing Negative Impact on Availability: Avoiding single points of failure and maximizing distribution performance without compromising system availability.:Flexibility and Accuracy of Distribution: Achieving dynamic resource balancing based on indicators such as CPU utilization, storage space occupancy, and energy consumption.:Case Study:Automatic User Provisioning Service Flow:Demonstrating the implementation of load balancing in a practical scenario where a mobile terminal APP registers in the IMS network, and the load balancing strategy manages the distribution of service requests between old and new UDC nodes.",
         },
       ],
     },
@@ -638,17 +680,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Interoperability: Ensuring seamless communication and cooperation between a variety of systems, applications, and devices developed by different vendors using multiple platforms and protocols.:Scalability: The middleware must accommodate the city's growth and increasing data volumes.:Security and Privacy: Due to the vast amounts of data involved, stringent encryption protocols and compliance with data protection regulations are necessary.:Real-Time Processing: Supporting applications like public safety or traffic management requires real-time data processing.:Reliability and Fault Tolerance: Preventing severe disruptions due to system downtime is critical.:Integration Capabilities: Aligning seamlessly with a range of applications is essential.:Effective Data Management: Handling abundant data volumes from multiple sensors and sources is a challenge.:Compliance with Standards and Regulations: Adherence to diverse technological standards and regulatory guidelines across different regions is necessary.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Comprehensive Suite of Enabling Technologies:IoT Devices: Sensors and actuators for real-time data collection, communication, and analysis.:Advanced Data Analytics: AI and machine learning to turn large volumes of data into actionable insights.:Cloud and Edge Computing: Infrastructure for data storage and processing.:Blockchain: Enhancing security and transparency, particularly in digital governance.:Horizontal Integration: Developing common software platforms that enable integrated solutions across various city domains, maximizing efficiency and optimizing resource utilization.:Privacy-Preserving Mechanisms: Implementing robust privacy measures, including encryption and secure data transmission, to protect sensitive information.:Middleware Frameworks:CityPulse: Facilitates the creation of smart city services through a distributed system designed for semantic discovery, data analytics, and interpretation of real-time data streams.:FIWARE: Provides a set of APIs and tools for developing smart applications, with components for context data management, security, and IoT device interfaces.:FogFlow: A fog computing framework for creating elastic IoT services across cloud and edge environments.:OpenIoT: Middleware platform for semantically unifying various IoT applications within the cloud environment.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "Literature Review: Reviewing existing literature on smart city middleware to identify key models, issues, and current research efforts.:Case Studies and Application Scenarios:CityPulse Framework: Semantic discovery, data analytics, and interpretation of real-time IoT and social media data streams.:FIWARE Platform: Provides components for various functionalities like context data management, security, and interfaces to the IoT.:Evaluation of Middleware Solutions: Analyzing 20 contemporary middleware solutions for smart city implementations to identify key functional and non-functional requirements and associated challenges.:Development of a Conceptual Framework:Proposing a framework that outlines functionalities prevalent in existing solutions.:Highlighting essential topics for the optimal development of future smart city middleware.",
         },
       ],
     },
@@ -685,17 +730,20 @@ export const data = {
         {
           id: 1,
           Problem: "Problem",
-          answer: "",
+          answer:
+            "Interoperability Issues: Ensuring seamless communication and data exchange between different big data tools is challenging due to non-interoperable data formats, incompatible designs, and lack of connectors.:Resource Management: Efficiently managing resources like memory, CPU, network bandwidth, and disk I/O during data processing is crucial to prevent performance degradation.:Complexity in Tool Selection: With a multitude of big data tools available, selecting the most appropriate tool for specific tasks, such as data acquisition, processing, storage, and analysis, is complex and requires careful evaluation.",
         },
         {
           id: 2,
           Problem: "Solution",
-          answer: "",
+          answer:
+            "Interoperability Matrix:Official Connectors: Using officially supported connectors provided by the tool vendors to ensure reliable data exchange.:Third-Party Connectors: When official connectors are not available, using third-party connectors or developing custom implementations.:Intermediary Tools: Utilizing intermediary tools like query engines or intermediate storage solutions to bridge gaps between incompatible tools.:Performance Evaluation:Experimental Study: Conducting performance tests to compare resource consumption requirements and evaluate the impact of resource variation on tool performance within a big data pipeline.:Resource Constraints: Analyzing the impact of limiting resources (CPU, memory, network bandwidth) on the performance of big data tools.:Guidelines for Tool Selection:Conceptual Needs Assessment: Identifying the specific needs of the big data scenario, such as speed, fault tolerance, data formats, transformations, scalability, and analytical requirements.:Resource Planning: Understanding the resource consumption of each tool and planning accordingly to avoid bottlenecks and ensure efficient resource utilization.:Interoperability Planning: Ensuring that selected tools are interoperable, either through official connectors or by planning for necessary intermediary tools.",
         },
         {
           id: 3,
           Problem: "Methodology",
-          answer: "",
+          answer:
+            "Literature Review: Reviewing existing literature on big data tools to identify key properties, strengths, and weaknesses of each tool.:Interoperability Study:Creating an interoperability matrix to document available connectors and evaluate the interoperability between different big data tools.Proposing solutions for connecting tools when official connectors are not available.:Experimental Study:Environment Setup: Deploying big data tools on a machine running Docker and setting up monitoring tools like Grafana and Prometheus to collect performance metrics.:Test Scenarios: Designing batch and stream processing scenarios using a dataset of tweets to evaluate the performance of data acquisition, processing, storage, and analysis tools.:Performance Metrics: Measuring key performance metrics such as run-time, memory consumption, CPU usage, network traffic bandwidth, and disk I/O operations.:Results and Discussion:Bottlenecks Identification: Identifying potential bottlenecks in the big data pipeline and evaluating the impact of resource constraints on tool performance.:Resource Consumption Comparison: Comparing the resource usage of different tools (e.g., NiFi vs. Flume) under various resource constraints and analyzing the implications for tool selection.",
         },
       ],
     },
