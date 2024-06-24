@@ -66,3 +66,8 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+select {
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
